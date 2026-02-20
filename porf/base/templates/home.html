@@ -1,0 +1,329 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goli Pranav Portfolio</title>
+    <!-- Modern Cozy Fonts: Nunito (Headings) and Quicksand (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'CSS/styles.css' %}?v=8">
+</head>
+
+<body>
+    <!-- navbar section goes here -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex s-around">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="logo-gp">GP</a></li>
+            </ul>
+    </nav>
+
+    <!-- home section goes here -->
+    <section id="home" class="flex s-around w-80 m-auto" style="min-height: 80vh; flex-wrap: wrap;">
+        <div class="home-left flex f-col s-center fade-in">
+            <div class="home-content">
+                <h6 class="nunito">Hello, I'm</h6>
+                <h1 class="t-dark nunito">Goli Pranav</h1>
+                <h4 class="quicksand t-dark">Building And Securing Softwares</h4>
+                <div class="buttons m-top">
+                    <a href="{% static 'Pdf/Goli_Pranav_Resume_.pdf' %}" target="_blank" class="btn">Download Resume</a>
+                    <a class="btn live quicksand" id="hireme" href="https://www.linkedin.com/in/pranav-goli-5b8425269"
+                        target="_blank">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+        <div class="home-right flex s-center item-center fade-in">
+            <div class="circle flex s-center item-center" id="mainimage">
+                <img src="{% static 'Images/avatar.png' %}?v=3" alt="picture" class="floating-avatar">
+            </div>
+        </div>
+    </section>
+
+    <!-- about section goes here -->
+    <section id="about">
+        <h1 class="t-center my-2 nunito"
+            style="color: var(--accent-peach); font-size: 2.8rem; font-weight: 800; letter-spacing: 0.02em;">About Me
+        </h1>
+        <div class="about-container flex s-around">
+            <div class="about-left flex s-center items-center">
+                <img src="{% static 'Images/pic1.png' %}" alt="about me picture">
+            </div>
+
+            <div class="about-right flex s-center items-center">
+                <div class="about-content fade-in">
+                    <h1 class="t-dark m-b-1 nunito">Goli Pranav</h1>
+                    <p class="t-dark quicksand">
+                        I am a passionate CyberSecurity Enthusiast and software developer with expertise in building
+                        scalable web applications.<br><br>
+                        I enjoy solving complex problems and creating efficient, user-friendly solutions.
+                    </p>
+                    <a class="btn nunito" id="hireme" href="https://www.linkedin.com/in/pranav-goli-5b8425269"
+                        target="_blank">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section goes here -->
+    <section id="skills">
+        <h1 class="skills-heading">Skills & Expertise</h1>
+        <div class="skills-container flex s-around">
+            <div class="skills-left flex f-col s-center items-center">
+                <div class="skills-list">
+                    <div class="bar">
+                        <span class="bar-label">Wireshark</span>
+                        <div class="bar-fill" data-percent="95"></div>
+                    </div>
+                    <div class="bar">
+                        <span class="bar-label">Nmap</span>
+                        <div class="bar-fill" data-percent="92"></div>
+                    </div>
+                    <div class="bar">
+                        <span class="bar-label">Incident Response</span>
+                        <div class="bar-fill" data-percent="98"></div>
+                    </div>
+                    <div class="bar">
+                        <span class="bar-label">Linux</span>
+                        <div class="bar-fill" data-percent="91"></div>
+                    </div>
+                    <div class="bar">
+                        <span class="bar-label">Python</span>
+                        <div class="bar-fill" data-percent="96"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-main flex f-col s-center items-center">
+                <img src="{% static 'Images/pic2.png' %}" alt="skills picture">
+                <div class="main-skill">
+                    <div class="bar main-bar">
+                        <span class="bar-label">Log Analysis</span>
+                        <div class="bar-fill" data-percent="90"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-right flex f-col s-center items-center">
+                <div class="skills-list">
+                    <div class="bar">
+                        <span class="bar-label">HTML</span>
+                        <div class="bar-fill" data-percent="89"></div>
+                    </div>
+                    <div class="bar">
+                        <span class="bar-label">CSS</span>
+                        <div class="bar-fill" data-percent="82"></div>
+                    </div>
+                    <div class="bar">
+                        <span class="bar-label">JavaScript</span>
+                        <div class="bar-fill" data-percent="80"></div>
+                    </div>
+                    <div class="bar">
+                        <span class="bar-label">SQL</span>
+                        <div class="bar-fill" data-percent="85"></div>
+                    </div>
+                    <div class="bar">
+                        <span class="bar-label">Django</span>
+                        <div class="bar-fill" data-percent="90"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section goes here -->
+    <section id="Project" class="m-b-1 pt-3">
+        <h1 class="t-center my-2 nunito"
+            style="color: var(--accent-peach); font-size: 2.8rem; font-weight: 800; letter-spacing: 0.02em;">Projects
+        </h1>
+        <div class="project-container flex s-center" style="gap: 2.5rem; flex-wrap: wrap;">
+            <div class="project-item flex f-col s-center items-center glass-card fade-in">
+                <h1 class="t-dark nunito">Voice Assistant with GUI</h1>
+                <ul class="t-dark quicksand" style="padding-left: 1.5rem; margin: 1rem 0; list-style-type: disc;">
+                    <li>Developed a Python-based voice assistant with an intuitive GUI, supporting real-time voice
+                        commands and interactive responses.</li>
+                    <li>Utilized speech recognition for input and pyttsx3 for text-to-speech.</li>
+                    <li>Integrated Wikipedia, webbrowser, and Tkinter for information retrieval, automation, and user
+                        interface.</li>
+                </ul>
+                <div class="button flex s-around">
+                    <a href="https://github.com/Pranavgoli/Voice-Assistant" target="_blank"
+                        class="btn mx-1 m-top">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-item flex f-col s-center items-center glass-card fade-in"
+                style="transition-delay: 0.1s;">
+                <h1 class="t-dark nunito">Password Generator Using Python</h1>
+                <ul class="t-dark quicksand" style="padding-left: 1.5rem; margin: 1rem 0; list-style-type: disc;">
+                    <li>Developed a Python application to generate secure, random passwords with customizable length and
+                        quantity.</li>
+                    <li>Utilized Python’s random, string, and secrets libraries to ensure strong randomness.</li>
+                </ul>
+                <div class="button flex s-around">
+                    <a href="https://github.com/Pranavgoli/Password-Generator-Using-Python" target="_blank"
+                        class="btn mx-1 m-top">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-item flex f-col s-center items-center glass-card fade-in"
+                style="transition-delay: 0.1s;">
+                <h1 class="t-dark nunito">Portfolio Using Django</h1>
+                <ul class="t-dark quicksand" style="padding-left: 1.5rem; margin: 1rem 0; list-style-type: disc;">
+                    <li>Built a dynamic personal portfolio using Python & Django with SQLite database integration and
+                        Django ORM-based CRUD project management.</li>
+                    <li>Designed responsive UI using HTML, CSS, Bootstrap and implemented form validation with contact
+                        data storage.</li>
+                    <li>Configured Django admin panel and modular app structure for easy content management and scalable
+                        full-stack architecture.</li>
+                </ul>
+                <div class="button flex s-around">
+                    <a href="https://github.com/Pranavgoli/Password-Generator-Using-Python" target="_blank"
+                        class="btn mx-1 m-top">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section goes here -->
+    <section id="contact" class="m-b-1 pt-3 pb-3 relative">
+        <h1 class="t-center my-2 nunito"
+            style="color: var(--accent-peach); font-size: 2.8rem; font-weight: 800; letter-spacing: 0.02em;">Contact Me
+        </h1>
+
+        {% if messages %}
+        <div id="django-messages" style="display: none;">
+            {% for message in messages %}
+            <span class="django-message">{{ message }}</span>
+            {% endfor %}
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var msgs = document.querySelectorAll('.django-message');
+                msgs.forEach(function (msg) {
+                    alert(msg.textContent);
+                });
+            });
+        </script>
+        {% endif %}
+
+        <div class="contact-container flex s-around items-center fade-in">
+            <div class="form glass-card" id="contactform">
+                <form method="post" action="#contact">
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="quicksand" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="quicksand" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="tel" name="phone" id="" class="quicksand" placeholder="Your Phone Number" required>
+                    </div>
+
+                    <div class="textarea form-div">
+                        <textarea name="message" id="textarea" cols="30" rows="6" class="quicksand"
+                            placeholder="Your Message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn nunito" id="submit" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section goes here -->
+    <section id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="quicksand">Home</a></li>
+            <li><a href="#about" class="quicksand">About</a></li>
+            <li><a href="#skills" class="quicksand">Skills</a></li>
+            <li><a href="#Project" class="quicksand">Projects</a></li>
+            <li><a href="#contact" class="quicksand">Contact</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome">
+            <a href="https://www.linkedin.com/in/pranav-goli-5b8425269" target="_blank" aria-label="LinkedIn">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+
+            <a href="https://github.com/Pranavgoli" target="_blank" aria-label="GitHub">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+
+            <a href="https://www.instagram.com/caution._.afk/" aria-label="Instagram">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+        </ul>
+        <p class="t-center my-2 quicksand">Designed & Built with passion and fire 🔥 by <span class="quicksand">Goli
+                Pranav</span> ©
+            2026. All Rights Reserved.
+        </p>
+    </section>
+</body>
+
+</html>
+
+<script>
+    function animateSkillBars() {
+        document.querySelectorAll('.bar-fill').forEach(bar => {
+            const percent = bar.getAttribute('data-percent');
+            bar.style.width = percent + '%';
+            // Add percent text inside the bar
+            if (!bar.querySelector('.bar-percent-inner')) {
+                const percentSpan = document.createElement('span');
+                percentSpan.className = 'bar-percent-inner';
+                percentSpan.textContent = percent + '%';
+                bar.appendChild(percentSpan);
+            }
+        });
+    }
+
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top < window.innerHeight && rect.bottom > 0
+        );
+    }
+
+    let skillsAnimated = false;
+    function checkAndAnimateSkills() {
+        const skillsSection = document.getElementById('skills');
+        if (!skillsAnimated && isElementInViewport(skillsSection)) {
+            animateSkillBars();
+            skillsAnimated = true;
+        }
+    }
+    window.addEventListener('scroll', checkAndAnimateSkills);
+    document.addEventListener('DOMContentLoaded', checkAndAnimateSkills);
+
+    // Fade-in Intersection Observer
+    document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Optional: stop observing once it's visible so it doesn't animate out and in again
+                    // observer.unobserve(entry.target); 
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach((el) => {
+            observer.observe(el);
+        });
+    });
+</script>
